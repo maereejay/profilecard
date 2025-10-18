@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Onwuasor Mary-Jane</h2>
+      </header>
+      <div class="description">
+        <figure>
+          <img
+            src="profileimg.jpg"
+            alt="Photo of Mary-Jane"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <p data-testid="test-user-bio">
+          A frontend developer passionate about building accessible web apps. I
+          love to develop websites that brings to life the best user experience.
+        </p>
+      </div>
+      <p data-testid="test-user-time" id="time"></p>
+
+      <nav data-testid="test-user-social-links">
+        <h3>Socials</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/onwuasor-mary-jane-289465248"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/maereejay"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Bugs in code</li>
+        </ul>
+      </section>
+    </article>
+
+    <script>
+      const timeElement = document.getElementById("time");
+
+      function updateTime() {
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString();
+        timeElement.textContent = "Time: " + formattedTime;
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
