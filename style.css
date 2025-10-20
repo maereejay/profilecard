@@ -15,6 +15,7 @@ body {
 article {
   width: 90%;
   max-width: 650px;
+  max-height: 800px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px #615b5b;
@@ -28,7 +29,6 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 .name {
   width: 100%;
@@ -38,7 +38,8 @@ article {
 }
 header h2 {
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.1rem, 4vw, 2rem);
+  margin-bottom: 0.7em;
 }
 .description {
   display: flex;
@@ -48,7 +49,6 @@ header h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 figure {
   width: 260px;
@@ -98,16 +98,15 @@ img:hover {
 }
 h3 {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.5rem;
-  border-bottom: 5px;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  margin-bottom: 0.1em;
 }
 ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 0.4em;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 a {
   text-decoration: none;
@@ -116,8 +115,8 @@ a {
 a,
 li {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
   color: #756e6e;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 a:hover {
   color: aqua;
@@ -125,20 +124,18 @@ a:hover {
 .hobbies li,
 .dislikes li {
   border: 2px solid transparent;
-  padding: 2px 7px;
   border-radius: 5px;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
+  padding: 0 0.4em;
+  line-height: 1;
 }
 .hobbies > li:hover,
 .dislikes > li:hover {
-  border: 2px solid white;
-  padding: 2px 7px;
-  border-radius: 5px;
+  border-color: white;
 }
 article > p {
   color: aqua;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: clamp(1.1rem, 3vw, 1.2rem);
-  margin-bottom: 2px;
 }
