@@ -15,7 +15,7 @@ body {
 article {
   max-width: 80%;
   max-width: 600px;
-  padding: 3%;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px #615b5b;
   display: flex;
@@ -33,11 +33,14 @@ header {
 .description {
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 1em;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
 }
 figure {
-  width: 40%;
-  height: 200px;
+  width: 200px;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,10 +54,10 @@ img {
   border: 1.5px solid white;
 }
 .description > p {
-  padding-top: 7%;
-  height: 100%;
-  width: 45%;
+  max-height: 100%;
+  width: 46%;
   font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
 }
 h3 {
   font-family: "Courier New", Courier, monospace;
