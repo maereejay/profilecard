@@ -8,6 +8,29 @@
   <body>
     <article data-testid="test-profile-card">
       <header>
+        <nav aria-label="Main navigation" class="mainnav">
+          <a href="" class="iconcontainer" aria-label="Home">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <ul class="navlinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <header class="name">
         <h2 data-testid="test-user-name">Onwuasor Mary-Jane</h2>
       </header>
       <div class="description">
@@ -52,18 +75,22 @@
 
       <section data-testid="test-user-hobbies">
         <h3>Hobbies</h3>
-        <ul>
+        <ul class="hobbies">
           <li>Coding</li>
           <li>Reading</li>
           <li>Music</li>
+          <li>Art</li>
+          <li>Gaming</li>
+          <li>Pets</li>
         </ul>
       </section>
 
       <section data-testid="test-user-dislikes">
         <h3>Dislikes</h3>
-        <ul>
+        <ul class="dislikes">
           <li>Procrastination</li>
-          <li>Bugs in code</li>
+          <li>Negativity</li>
+          <li>Loud environments</li>
         </ul>
       </section>
     </article>
@@ -72,13 +99,13 @@
       const timeElement = document.getElementById("time");
 
       function updateTime() {
-        const now = new Date();
-        const formattedTime = now.toLocaleTimeString();
-        timeElement.textContent = "Time: " + formattedTime;
+        const now = Date.now(); 
+        timeElement.textContent = `Time (ms): ${now}`;
       }
 
       updateTime();
-      setInterval(updateTime, 1000);
+      setInterval(updateTime, 100); 
     </script>
+  </body>
   </body>
 </html>
