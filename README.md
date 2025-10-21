@@ -17,10 +17,6 @@ A Contact Us page with form validation and accessibility support
 
 An About Me page with reflective content and semantic sectioning
 
-🔧 Features
-🧱 Semantic HTML
-
-Uses proper structural elements (<main>, <section>, <header>, <footer>, <form>, <label>, etc.) to ensure meaning and readability.
 
 ♿ Accessible Design
 
