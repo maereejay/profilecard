@@ -13,33 +13,53 @@ body {
   background-color: bisque;
 }
 article {
-  width: 90%;
-  max-width: 650px;
+  width: 70%;
+  max-width: 500px;
   max-height: 800px;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 7px;
   box-shadow: 0 0 10px #615b5b;
   display: flex;
   flex-direction: column;
   background-color: rgb(28, 26, 26);
-  gap: 10px;
-  border: 1px solid white;
+  gap: 0.5em;
+  border: 1.5px solid white;
 }
 .mainnav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+  color: aqua;
+}
+.navlinks li {
+  color: aqua;
+}
+.iconcontainer {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.iconcontainer:hover {
+  border-color: white;
 }
 .name {
   width: 100%;
+  height: fit-content;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
 header h2 {
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(1.1rem, 4vw, 2rem);
-  margin-bottom: 0.7em;
+  font-size: clamp(1rem, 4vw, 1.7rem);
+  margin-bottom: 0.3em;
 }
 .description {
   display: flex;
@@ -49,10 +69,11 @@ header h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 0.3em;
 }
 figure {
-  width: 260px;
-  height: 250px;
+  width: 170px;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,11 +115,12 @@ img:hover {
   max-height: 100%;
   width: 250px;
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(1.1rem, 3vw, 1.2rem);
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 h3 {
   font-family: "Courier New", Courier, monospace;
-  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  line-height: 1;
   margin-bottom: 0.1em;
 }
 ul {
@@ -110,24 +132,27 @@ ul {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #756e6e;
+  padding: 0.2em 0.4em;
 }
 a,
 li {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #756e6e;
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
+
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  line-height: 1;
 }
 a:hover {
   color: aqua;
 }
 .hobbies li,
 .dislikes li {
+  color: #756e6e;
   border: 2px solid transparent;
   border-radius: 5px;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
-  padding: 0 0.4em;
+  padding: 0.2em 0.4em;
   line-height: 1;
 }
 .hobbies > li:hover,
@@ -137,5 +162,6 @@ a:hover {
 article > p {
   color: aqua;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: clamp(1.1rem, 3vw, 1.2rem);
+  font-size: clamp(0.7rem, 3vw, 0.9rem);
+  margin-bottom: 0.5em;
 }

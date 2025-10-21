@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Me</title>
   </head>
   <body>
     <article data-testid="test-profile-card">
@@ -31,10 +31,79 @@
         </nav>
       </header>
       <header class="name">
-        <h2 data-testid="test-user-name">Onwuasor Mary-Jane</h2>
+        <h2 data-testid="test-user-name">Contact</h2>
       </header>
+
+
+      <section class="form">
+      <form id="contact-form" novalidate>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          data-testid="test-contact-name"
+          aria-describedby="error-name"
+          required
+        />
+        <p class="error" id="error-name" data-testid="test-contact-error-name"></p>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          data-testid="test-contact-email"
+          aria-describedby="error-email"
+          required
+        />
+        <p class="error" id="error-email" data-testid="test-contact-error-email"></p>
+      </div>
+
+      <!-- Subject -->
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          data-testid="test-contact-subject"
+          aria-describedby="error-subject"
+          required
+        />
+        <p class="error" id="error-subject" data-testid="test-contact-error-subject"></p>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          data-testid="test-contact-message"
+          aria-describedby="error-message"
+          required
+        ></textarea>
+        <p class="error" id="error-message" data-testid="test-contact-error-message"></p>
+      </div>
      
+      <div class="button-container">
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+      </div>
+      <p id="success" class="success" data-testid="test-contact-success" hidden>
+        ✅ Thank you! Your message has been sent successfully.
+      </p>
+    </form>
+ </section>
     </article>
+      <script src="contact.js"></script>
+
   </body>
   </body>
 </html>
