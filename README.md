@@ -1,28 +1,87 @@
-🪪 Profile Card — Stage 0 Task
+🪪 Profile Card — HNG Internship (Stage 1)
 
-This is my HNG Internship Stage 0 task, where I built a responsive and accessible Profile Card Component using plain HTML, CSS, and JavaScript.
+Live Project: https://onwuasorprofilecard.netlify.app/
 
-The project follows the required semantic structure, uses data-testid attributes for testing, and adapts smoothly across screen sizes.
+This project is part of my HNG Internship Stage 1 Task, built upon my Stage 0 Profile Card.
+In this stage, I extended the single-page component into a multi-page application with two new pages — Contact Us and About Me — while maintaining accessibility, responsiveness, and clean semantic structure.
+
+🚀 Project Overview
+
+This project demonstrates my ability to create accessible, responsive, and modular front-end components using HTML, CSS, and JavaScript — no frameworks, no shortcuts.
+
+The app now includes:
+
+A Profile Card (from Stage 0)
+
+A Contact Us page with form validation and accessibility support
+
+An About Me page with reflective content and semantic sectioning
 
 🔧 Features
+🧱 Semantic HTML
 
-🧱 Semantic HTML — built with proper tags like <article>, <figure>, <section>, and <nav>.
+Uses proper structural elements (<main>, <section>, <header>, <footer>, <form>, <label>, etc.) to ensure meaning and readability.
 
-🧩 Accessible design — all links are keyboard-focusable and include alt text.
+♿ Accessible Design
 
-📱 Responsive layout — stacks vertically on small screens and side-by-side on larger ones.
+All form inputs include <label> elements linked via for.
 
-⏱️ Live time display — dynamically updates every second using Date() in JavaScript.
+Error messages use aria-describedby for screen reader compatibility.
 
-🖼️ Profile image, bio, hobbies, and dislikes sections included.
+Entire app is keyboard-navigable.
 
-🌐 Social links open safely in a new tab (target="_blank" with rel="noopener noreferrer").
+Alt text and ARIA labels ensure inclusive usability.
+
+🧩 Contact Us Page
+
+Includes Full Name, Email, Subject, and Message fields.
+
+Inline form validation:
+
+All fields required.
+
+Email must match a valid pattern.
+
+Message requires at least 10 characters.
+
+Displays success message only after a valid submission.
+
+Uses data-testids (e.g., test-contact-name, test-contact-success) for automated testing.
+
+💬 About Me Page
+
+A reflective, semantically structured page divided into:
+
+Bio (test-about-bio)
+
+Goals in this program (test-about-goals)
+
+Areas of low confidence (test-about-confidence)
+
+Note to future self (test-about-future-note)
+
+Extra thoughts (test-about-extra)
+
+Each section uses clear headings and follows proper document hierarchy.
+
+📱 Responsive Layout
+
+Built with Flexbox and media queries — scales smoothly across mobile, tablet, and desktop.
+
+⏱️ Dynamic Elements
+
+The Profile Card includes a real-time clock powered by Date() in JavaScript.
+
+🌐 Safe Links
+
+External links open securely with
+target="_blank" + rel="noopener noreferrer".
 
 🧠 Tech Stack
 
-HTML5
+HTML5 — semantic structure
 
-CSS3 (Flexbox, responsive design)
+CSS3 — Flexbox, responsive design, hover/transition effects
 
-Vanilla JavaScript
+Vanilla JavaScript — dynamic content & form validation
 
