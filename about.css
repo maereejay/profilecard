@@ -101,3 +101,8 @@ h2 {
 .aboutheading {
   color: aqua;
 }
+.active {
+  border-bottom: 1.5px solid aqua;
+  padding-bottom: 0.2em;
+  color: aqua;
+}
